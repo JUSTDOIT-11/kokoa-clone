@@ -1,25 +1,5 @@
 .notification__dot {
   position: absolute;
-  left: 90px;
-}
-
-.find-icons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.find-icons__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.find-icons__icon i {
-  font-size: 35px;
-}
-
-.find-icons__icon span {
-  margin-top: 15px;
 }
 
 .recommended-friends {
@@ -62,6 +42,7 @@
 .open-post__title {
   font-weight: 600;
   margin-bottom: 7px;
+  font-size: 18px;
 }
 
 .open-post__hashtags {
@@ -124,4 +105,13 @@
 
 .open-post__heart-count span {
   margin-left: 3px;
+}
+
+.open-chat__second {
+  margin-top: 10px;
+  border-top: var(--main-border);
+}
+
+.open-post__second {
+  margin-top: 10px;
 }

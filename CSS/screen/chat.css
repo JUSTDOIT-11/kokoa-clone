@@ -11,9 +11,14 @@
   background-color: #abc1d1;
 }
 
+#chat-screen .status-bar {
+  z-index: 1;
+}
+
 #chat-screen .alt-header {
   top: 42px;
   padding: 0px 20px;
+  z-index: 1;
 }
 
 .main-chat {

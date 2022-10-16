@@ -107,6 +107,25 @@
   margin-left: 3px;
 }
 
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(1.2);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-post__heart-count:hover {
+  /* will-change: transform;*/
+  animation: heartBeat 1s linear infinite;
+}
+
 .open-chat__second {
   margin-top: 10px;
   border-top: var(--main-border);

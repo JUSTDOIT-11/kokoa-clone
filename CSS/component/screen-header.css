@@ -23,3 +23,16 @@
 .cog-dot {
   position: relative;
 }
+
+@keyframes ratateCog {
+  form {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: ratateCog 2s linear infinite;
+}

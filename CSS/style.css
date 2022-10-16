@@ -8,12 +8,15 @@
 @import "component/user-component.css";
 @import "component/noti-dot.css";
 @import "component/icon-row.css";
+@import "component/alt-screen-header.css";
 /*Screen*/
 @import "component/badge.css";
 @import "screen/login.css";
 @import "screen/friends.css";
 @import "screen/find.css";
 @import "screen/more.css";
+@import "screen/settings.css";
+@import "screen/chat.css";
 
 body {
   color: #2e3632;

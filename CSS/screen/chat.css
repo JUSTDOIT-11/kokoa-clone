@@ -38,9 +38,42 @@
 }
 
 .message-row {
+  opacity: 0;
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+}
+
+@keyframes ReceiveMessage {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0px);
+  }
+}
+
+.message-row-Kokoa {
+  animation: ReceiveMessage 0.5s ease-in forwards;
+  animation-delay: 1s;
+}
+
+@keyframes SendMessage {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0px);
+  }
+}
+
+.message-row-own {
+  animation: SendMessage 0.5s ease-in forwards;
+  animation-delay: 2s;
 }
 
 .message-row img {
@@ -101,6 +134,7 @@
   align-items: center;
   padding: 5px 25px;
   box-sizing: border-box;
+  transition: transition 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -117,6 +151,7 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -150,4 +185,25 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-face-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 90vw;
+  transform: translateX(-13%) translateY(-60px);
+}
+
+.reply:focus-within {
+  transform: translateY(60px);
 }
